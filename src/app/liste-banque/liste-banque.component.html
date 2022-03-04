@@ -1,26 +1,27 @@
+
 <div class=" d-flex justify-content-center ">
     <div class="col-lg-7 col-md-12">
         <div class="card" style="min-height: 550px; max-width: 300%x;">
             <div class="card-header card-header-text">
-                <h4 class="card-title">Liste des utilisateurs</h4>
+                <h4 class="card-title">Liste Banque</h4>
                 
             </div>
             <div class="w-100 p-3 card-content table-responsive ">
                 <table class="table table-hover">
                     <thead class="text-danger">
-                        <tr><th>Nom et Prenom</th>
+                        <tr><th>Nom</th>
                         <th>Telephone</th>
-                        <th>Profil</th>
+                        <th>Adresse</th>
                         <!-- <th>Groupe Sanguin</th> -->
                         <th>Email</th>
                     </tr></thead>
                     <tbody>
-                        <tr *ngFor="let users of listUsers ">
-                            <td>{{users.nomComplet}}</td>
-                            <td>{{users.telephone}}</td>
-                            <td>{{users.profils}}</td>
+                        <tr *ngFor="let list of listeBanque">
+                            <td>{{list.nom}}</td>
+                            <td>{{list.adresse}}</td>
+                            <td>{{list.telephone}}</td>
                             <!-- <td>{{users?.groupeSanguin.type}}</td> -->
-                            <td>{{users.email}}</td>
+                            <td>{{list.email}}</td>
                         </tr>
                       
                     </tbody>
