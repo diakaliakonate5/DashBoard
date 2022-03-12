@@ -14,10 +14,9 @@ const routes: Routes = [
     { path: 'ListDemande', component: ListDemandeComponent },
     { path: 'ListAccept', component: ListAccepterComponent },
   
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+]
+    @NgModule({
+      imports: [RouterModule.forRoot(routes)],
+      exports: [RouterModule]
+    })
+    export class AppRoutingModule { }

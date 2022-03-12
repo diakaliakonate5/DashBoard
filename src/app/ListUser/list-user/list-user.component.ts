@@ -8,18 +8,18 @@ import { ServicesService } from 'src/app/Services/services.service';
 })
 export class ListUserComponent implements OnInit {
 listUsers: any
-  constructor(private service : ServicesService) { }
+  constructor(public service:ServicesService) { }
 
   ngOnInit(): void {
-    this.listerUsers();
   
-    
+    this.getallusers();
   }
 
-  listerUsers(){
-    this.service.getAllUsers().subscribe((data)=>{
-      console.log(data);
-      return this.listUsers=data;
+  getallusers(){
+    return this.service.getallusers().subscribe(donne =>{
+      this.listUsers=donne;
+      console.log(donne);
+      
 
     })
   }
