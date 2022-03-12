@@ -52,7 +52,7 @@
                       <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
             <i class="material-icons">aspect_ratio</i><span>Utilisateur</span></a>
                       <ul class="collapse list-unstyled menu" id="homeSubmenu1">
-                          <li>
+                          <li class="black">
                               <a href="/ListUser">Liste Utilisateur</a>
                           </li>
                          
@@ -67,7 +67,7 @@
                               <a href="#"> <i class="material-icons">add</i>Ajout</a>
                           </li>
                           <li>
-                              <a href="#">  <i class="material-icons"> filter_list</i>Liste</a>
+                              <a routerLink="/ListBanque"><i class="material-icons">list</i> Liste</a>
                           </li>
                          
                       </ul>
@@ -111,23 +111,35 @@
                       <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
             <i class="material-icons">border_color</i><span>Rendez-Vous</span></a>
                       <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+            
                           <li>
-                              <a href="#">Page 1</a>
+                              <a routerLink="/ListRdv">List RendezVous</a>
                           </li>
-                          <li>
-                              <a href="#">Page 2</a>
-                          </li>
-                          <li>
-                              <a href="#">Page 3</a>
-                          </li>
+                        
                       </ul>
                   </li>
-                 
-           
-           
-
-                 
-                 
+                  <li class="dropdown">
+                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="material-icons">border_color</i><span>Demande</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+          
+                        <li>
+                            <a routerLink="/ListDemande">List Demande</a>
+                        </li>
+                      
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="material-icons">border_color</i><span>Acceptation</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+          
+                        <li>
+                            <a routerLink="/ListAccept">List Accept</a>
+                        </li>
+                      
+                    </ul>
+                </li>  
               </ul>
   
              
@@ -216,12 +228,12 @@
                         
                           <div class="col-lg-3 col-md-6 col-sm-6">
                               <div class="card card-stats">
-                                  
+                                  <a routerLink="/ListBanque">
                                   <div class="card-content">
                                       <p class="category"><strong>Liste Banque</strong></p>
                                       <!-- <h3 class="card-title">102</h3> -->
                                   </div>
-                                 
+                                </a>
                               </div>
                           </div>
                           <div class="col-lg-3 col-md-6 col-sm-6">

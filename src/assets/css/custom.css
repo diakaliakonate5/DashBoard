@@ -8,14 +8,14 @@ body, html {
 	 text-transform:capitalize;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	 font-weight: 400;
+	 font-weight: 900;
 	 margin:0px;
      padding:0px;
 }
 
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
-    font-weight: 400;
+    font-weight: 900;
     line-height: 1.5em;
 }
 
@@ -30,7 +30,7 @@ p {
 
 a{
 	color: #333;
-	font-weight: 400;
+	font-weight: 900;
 }
 
 button:focus{
@@ -80,7 +80,7 @@ a:focus {
 
 .material-icons {
   font-family: 'Material Icons';
-  font-weight: normal;
+  font-weight: 100px;
   font-style: normal;
   font-size: 24px;  /* Preferred icon size */
   display: inline-block;

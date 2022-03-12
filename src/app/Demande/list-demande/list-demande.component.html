@@ -1,0 +1,33 @@
+<div class=" d-flex justify-content-center ">
+    <div class="col-lg-7 col-md-12">
+        <div class="card" style="min-height: 550px; max-width: 300%x;">
+            <div class="card-header card-header-text">
+                <h4 class="card-title">Liste des demandes</h4>
+                
+            </div>
+            <div class="w-100 p-3 card-content table-responsive ">
+                <table class="table table-hover">
+                    <thead class="text-danger">
+                        <tr><th>Date</th>
+                        <th>Poche</th>
+                        <th>Groupe Sanguin</th>
+                        <th>Demandeur</th>
+                       
+                    </tr></thead>
+                    <tbody *ngFor="let users of listDemande ">
+                        <tr>
+                            <td>{{users.date}}</td>
+                            <td>{{users.nbrepoche}}</td>
+                            <td>{{users.groupeSanguin.type}}</td>
+                            <td>{{users.utilisateur.nomComplet}}</td>
+                            
+                        </tr>
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+   
+</div>
