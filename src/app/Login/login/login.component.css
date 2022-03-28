@@ -1,0 +1,79 @@
+#all{
+    margin-top: 0;
+
+    height:600px;
+    padding: 5%;
+} 
+#box{
+    padding-top: 4%;
+    width: 35%;
+    height:500px;
+    margin:auto;
+    background-color:rgba(245, 82, 82, 0.5) ; 
+    border-radius: 40px 40px 40px 40px;
+}
+
+    .log input, .pass input,select{
+        margin-left:20% ;
+        color:rgb(0, 0, 0);
+        font-size:20px;
+        width: 370PX;
+        float:left;
+        background: white;
+        margin-bottom:35px;
+        border: solid rgb(179, 35, 35) 1px;
+        border-radius: 10px;
+        
+    }
+   
+    .button{
+        margin-left:20% ;
+        color:rgb(255, 255, 255);
+        width:370PX;
+        background:brown;
+        padding:8px; 
+        font-size : 25px;
+        cursor:pointer;
+        padding-left: 27px;
+        border-radius: 20px;
+    }
+
+    form{
+        /* position: absolute; */
+        top: 30%;
+    left: 8%; 
+    }
+    h1{
+        padding-left:35%;
+        color: aliceblue;
+    }
+
+    #image2{
+        width: 250px;
+        position: absolute;
+        top:5px;
+        right:0px;
+
+    }
+    #image1{
+        /* position: absolute; */
+        margin-top: 10%;
+        width:700px;
+
+        
+    }
+    ::placeholder {
+        color: black;
+        font-size: 20px;
+        text-align: center;
+      }
+      .main-header{
+        height: 30vh;
+        width: 102%;
+        background: brown;
+        box-shadow: 0 1px 10px var(--ion-color-danger-brown);
+        border-radius: 0 0 50% 50%;
+        margin-left: -4.5vh;
+        margin-top: -10px;
+        margin-bottom: -15px;
+      }

@@ -1,0 +1,26 @@
+
+
+
+<div class="main-header">
+  <img  style="width: 20%; margin-left: 40%; margin-top: 20px;" src="../../../assets/img/My_blodd.png" alt="">
+</div>
+<div id="all">
+    
+    <div id="box" class="row md-4" style="background-color: rgb(218, 107, 107);">
+        <h1>Bienvenue</h1>
+        <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" novalidate autocomplete="nope" >
+        <div class="log">
+            <input type="text" placeholder="Veuillez saisir votre Login" name="login" ngModel required autocomplete="off" >
+        </div>
+
+        <div class="pass">
+            <input type="password" placeholder="Veuillez saisir votre mot de passe" name="password" ngModel required>
+        </div>
+     
+        <div>
+        <button class="button" type='submit' value="sign in">Connexion</button>
+        </div>
+        </form>
+    </div>
+     
+   </div>

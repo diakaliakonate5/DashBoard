@@ -6,24 +6,32 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServicesService {
-  url:string="http://localhost:8080/Utilisateur/"
+  url='http://localhost:8080';
 
   constructor(public http:HttpClient) {
 
    }
+   login(login : string, password : String){
+    // console.log(telephone);
+    return this.http.get(this.url+"/Admin/login/"+login+"/"+password);
+  }
 
    getallusers(){
-     return this.http.get(this.url+'listUtilisateur')
+     return this.http.get(this.url+"/Utilisateur/listUtilisateur")
    }
   listbanque(){
-    return this.http.get('http://localhost:8080/Banque/listBanque')
+    return this.http.get(this.url+"/Banque/listBanque")
   }
   listaction(){
-    return this.http.get('http://localhost:8080/Action/listAction')
+    return this.http.get(this.url+'/Action/listAction')
   }
   //Banque///////////////////
   getBanque(){
     return this.http.get(this.url+"/Banque/listBanque");
+  }
+  AjoutBanque(data: any){
+    console.log(data);
+    return this.http.post(this.url+"/Banque/Ajout", data);
   }
   //Rdv///////////////
   getAllRdv(){
@@ -37,4 +45,5 @@ export class ServicesService {
   getAllAccept(){
     return this.http.get(this.url+"/Accepter/listAccept");
   }
+
 }

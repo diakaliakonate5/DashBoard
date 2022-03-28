@@ -1,33 +1,48 @@
-<div class=" d-flex justify-content-center ">
-    <div class="col-lg-7 col-md-12">
-        <div class="card" style="min-height: 550px; max-width: 300%x;">
-            <div class="card-header card-header-text">
-                <h4 class="card-title">Liste accept</h4>
-                
-            </div>
-            <div class="w-100 p-3 card-content table-responsive ">
-                <table class="table table-hover">
-                    <thead class="text-danger">
-                        <tr><th>Date</th>
-                        <th>Accepteur</th>
-                        <th>Telephone</th>
-                        <th>Adresse</th>
-                       
-                    </tr></thead>
-                    <tbody *ngFor="let users of listAccept ">
-                        <tr>
-                            <td>{{users.date}}</td>
-                            <td>{{users.accepteur.nomComplet}}</td>
-                            <td>{{users.accepteur.telephone}}</td>
-                            <td>{{users.accepteur.adresse}}</td>
+
+
+
+	<!-- start page content -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-box">
+                        <div class="card-head">
                             
-                        </tr>
-                      
-                    </tbody>
-                </table>
+                            
+                        </div>
+                        <div class="card-body ">
+                            <div class="row p-b-20">
+                              
+                               
+                                
+                            </div>
+                            <div class="table-scrollable">
+                                <header style="text-align: center;"> Liste des donneurs</header>
+                            <table class="table table-hover table-checkable order-column full-width" id="example4">
+                                <thead class="text-danger">
+                                    <tr><th>Date</th>
+                                    <th>Accepteur</th>
+                                    <th>Telephone</th>
+                                    <th>Adresse</th>
+                                   
+                                </tr></thead>
+                                <tbody *ngFor="let users of listAccept ">
+                                    <tr>
+                                        <td>{{users.date}}</td>
+                                        <td>{{users.accepteur.nomComplet}}</td>
+                                        <td>{{users.accepteur.telephone}}</td>
+                                        <td>{{users.accepteur.adresse}}</td>
+                                        
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        <!-- end page content -->
         </div>
     </div>
-  
-   
-</div>
