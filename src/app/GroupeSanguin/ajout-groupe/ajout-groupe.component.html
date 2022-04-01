@@ -1,0 +1,63 @@
+<!-- start page content -->
+<div class="page-content-wrapper">
+  <div class="page-content">
+
+          <div class="col-md-12 col-sm-12">
+              <div class="card card-box">
+                  <div class="card-head">
+                      <header>Nouvelle Groupe</header>
+
+                  </div>
+                  <div class="card-body" id="bar-parent2">
+                      <form  id="form_sample_2" class="form-horizontal" novalidate="novalidate" [formGroup]=" formgroup" (ngSubmit)="ajouterB(formgroup)">
+               <div class="form-row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="nom">Type </label>
+                                      <input type="text" class="form-control" id="tel" formControlName="type"    [ngClass]="{ 'is-invalid': submitted && f.type.errors }"/>
+                                      <div *ngIf="submitted && f.type.errors" class="invalid-feedback">
+                                          <div *ngIf="f.type.errors.required">le champ type est obligatoire</div>
+                                      </div>
+                                  </div>
+                               </div>
+                               <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="telephone">Peut donner au :</label>
+                                      <input type="text" class="form-control" formControlName="donne" [ngClass]="{ 'is-invalid': submitted && f.donne.errors }"/>
+                                      <div *ngIf="submitted && f.donne.errors" class="invalid-feedback">
+                                          <div *ngIf="f.donne.errors.required">Le champ donneur possible obligatoire</div>
+                                      </div>
+                                  </div>
+                              </div>
+
+               </div>
+           <div class="form-row">
+
+              <div class="form-group col-md-6">
+                  <label for="adresse">receveurs possible</label>
+                  <input type="text" class="form-control" formControlName="recois" [ngClass]="{ 'is-invalid': submitted && f.recois.errors }"/>
+                  <div *ngIf="submitted && f.recois.errors" class="invalid-feedback">
+                      <div *ngIf="f.recois.errors.required">Le champ adresse est obligatoire</div>
+                  </div>
+              </div>
+
+
+
+               </div>
+
+      <div class="form-group">
+          <div class="offset-md-3 col-md-9" style="padding: 30px;">
+
+
+               <!-- <button type="submit"  class="btn btn-success mr-5" >Valider</button> -->
+               <button type="submit" class="btn btn-success ms-5">Enregistrer</button>
+              </div>
+              </div>
+
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+<!-- end page content -->

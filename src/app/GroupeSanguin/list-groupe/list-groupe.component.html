@@ -1,0 +1,54 @@
+
+	<!-- start page content -->
+  <div class="page-content-wrapper">
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-box">
+                    <div class="card-head">
+
+
+                    </div>
+                    <div class="card-body ">
+                      <div class="row p-b-20">
+                        <div class="col-md-6 col-sm-6 col-6">
+                            <div class="btn-group">
+                                <a href="/AjoutGroupe" id="addRow" class="btn btn-success">
+                                    Ajouter  <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                        <div class="table-scrollable">
+                            <header style="text-align: center;"> Liste des GROUPES</header>
+                        <table class="table table-hover table-checkable order-column full-width" id="example4">
+                            <thead class="text-danger">
+                                <tr><th>Types</th>
+                                <th>Donner</th>
+                                <th>Recevoir</th>
+
+
+                            </tr></thead>
+                            <tbody *ngFor="let groupe of listGroupe ">
+                                <tr>
+                                    <td>{{groupe.type}}</td>
+                                    <td>{{groupe.donne}}</td>
+                                    <td>{{groupe.recois}}</td>
+
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- end page content -->
+    </div>
+</div>

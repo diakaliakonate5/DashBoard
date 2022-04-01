@@ -2,35 +2,35 @@
 
 
   <div class="body-overlay"></div>
-  
-  
+
+
           <!-- Sidebar  -->
           <nav id="sidebar" >
               <div class="sidebar-header">
                   <h3><img style="width: 200px;" src="../assets/img/My_blodd.png" class="img-fluid"/><span></span></h3>
               </div>
               <ul class="list-unstyled components">
-       
-      
+
+
             <div class="small-screen navbar-display">
-               
+
           </div>
-        
-        
+
+
                   <li class="dropdown">
                       <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="material-icons">aspect_ratio</i><span>Utilisateur</span></a>
+            <i class="material-icons">group</i><span>Utilisateur</span></a>
                       <ul class="collapse list-unstyled menu" id="homeSubmenu1">
                           <li class="black">
-                              <a href="/ListUser">Liste Utilisateur</a>
+                              <a href="/ListUser"><i class="material-icons">checklist</i><span></span>Liste Utilisateur</a>
                           </li>
-                         
+
                       </ul>
                   </li>
-                  
+
                   <li class="dropdown">
                       <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="material-icons">apps</i><span>Banque Sang</span></a>
+            <i class="material-icons">emergency</i><span>Banque Sang</span></a>
                       <ul class="collapse list-unstyled menu" id="pageSubmenu2">
                           <li>
                               <a href="/AjoutBanque"> <i class="material-icons">add</i>Ajout</a>
@@ -38,110 +38,124 @@
                           <li>
                               <a routerLink="/ListBanque"><i class="material-icons">list</i> Liste</a>
                           </li>
-                         
+
                       </ul>
                   </li>
-          
-          
-          
+
+
+
           <li class="dropdown">
                       <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <i class="material-icons">border_color</i><span>Rendez-Vous</span></a>
+            <i class="material-icons">fact_check</i><span>Rendez-Vous</span></a>
                       <ul class="collapse list-unstyled menu" id="pageSubmenu5">
-            
+
                           <li>
-                              <a routerLink="/ListRdv">List RendezVous</a>
+
+                              <a routerLink="/ListRdv"><i class="material-icons">checklist</i><span></span>List RendezVous</a>
                           </li>
-                        
+
                       </ul>
                   </li>
                   <li class="dropdown">
                     <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-          <i class="material-icons">border_color</i><span>Demande</span></a>
+          <i class="material-icons">lightbulb_circle</i><span>Demande</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu6">
-          
+
                         <li>
-                            <a routerLink="/ListDemande">List Demande</a>
+                            <a routerLink="/ListDemande"><i class="material-icons">checklist</i><span></span>List Demande</a>
                         </li>
-                      
+
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-          <i class="material-icons">border_color</i><span>Acceptation</span></a>
+          <i class="material-icons">thumb_up_alt</i><span>Acceptation</span></a>
                     <ul class="collapse list-unstyled menu" id="pageSubmenu7">
-          
+
                         <li>
-                            <a routerLink="/ListAccept">List Accept</a>
+                            <a routerLink="/ListAccept"><i class="material-icons">checklist</i><span></span>List Accept</a>
                         </li>
-                      
+
                     </ul>
-                </li>  
+                </li>
+                <li class="dropdown">
+                  <a href="#pageSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+        <i class="material-icons">bloodtype</i><span>Groupe Sanguin</span></a>
+                  <ul class="collapse list-unstyled menu" id="pageSubmenu8">
+                      <li>
+                          <a href="/AjoutGroupe"> <i class="material-icons">add</i>Ajout Groupe</a>
+                      </li>
+                      <li>
+                          <a routerLink="/ListGroupe"><i class="material-icons">checklist</i><span></span> Liste Groupe</a>
+                      </li>
+
+                  </ul>
+              </li>
               </ul>
-  
-             
+
+
           </nav>
-      
-      
-  
+
+
+
           <!-- Page Content  -->
           <div id="content">
-      
+
       <div class="top-navbar" >
               <nav class="navbar navbar-expand-lg">
                   <div class="container-fluid">
-  
+
                       <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
                           <span class="material-icons">arrow_back_ios</span>
                       </button>
-            
+
             <!-- <a class="navbar-brand" href="#"> Dashboard </a> -->
-            
+
                       <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="material-icons">more_vert</span>
                       </button>
-  
+
                       <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
-                          <ul class="nav navbar-nav ml-auto">   
-                             
+                          <ul class="nav navbar-nav ml-auto">
+
                               <a href="/profil">
                               <li class="nav-item">
-                                  
+
                   <span style="color: red ; margin-left: 10px;"  class="material-icons">person</span>
-                  
+
                               </li></a>
                               <a (click)="logOut()">
                                 <li class="nav-item">
-                                    
+
                     <span style="color: red;" class="material-icons">settings_power</span>
-                    
+
                                 </li></a>
-                              
-              
+
+
                           </ul>
                       </div>
                   </div>
               </nav>
         </div>
-        
-        
+
+
         <div class="main-content">
-        
+
         <div class="row"   >
-                          
-                       
+
+
                              <div class="col-lg-3 col-md-6 col-sm-6 ">
                               <div class="card card-stats ">
                                 <a routerLink="/ListUser">
                                   <div class="card-content">
                                       <p class="category"><strong>Liste Utilisateurs</strong></p>
-                                     
+
                                   </div>
                                 </a>
                               </div>
                           </div>
-                     
+
                           <div class="col-lg-3 col-md-6 col-sm-6">
                               <div class="card card-stats">
                                   <a  routerLink="/ListBanque">
@@ -173,15 +187,15 @@
                               </div>
                           </div>
                       </div>
-            
-            
-           
+
+
+
                       <router-outlet></router-outlet>
-           
-            
+
+
             </div>
-            
-             
+
+
             <footer class="footer">
                 <div class="container-fluid">
           <div class="row">
@@ -193,23 +207,23 @@
                                     Home
                                 </a>
                             </li>
-                          
+
                         </ul>
                     </nav>
-                   
+
                 </div>
-                
+
         <div class="col-md-6">
-         <p class="copyright d-flex justify-content-end"> &copy 2022 by  
-                        <a href="#">BankBlood</a> 
+         <p class="copyright d-flex justify-content-end"> &copy 2022 by
+                        <a href="#">BankBlood</a>
                     </p>
         </div>
           </div>
             </div>
             </footer>
-  
+
           </div>
-          
+
       </div>
 
 <div *ngIf="!loginStatus == true" >

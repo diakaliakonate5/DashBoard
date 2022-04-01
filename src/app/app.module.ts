@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './Login/login/login.component';
 import { AjoutComponent } from './Banque/ajout/ajout.component';
 import { ProfilComponent } from './Profil/profil/profil.component';
+import { AjoutGroupeComponent } from './GroupeSanguin/ajout-groupe/ajout-groupe.component';
+import { ListGroupeComponent } from './GroupeSanguin/list-groupe/list-groupe.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProfilComponent } from './Profil/profil/profil.component';
     
     LoginComponent,
           AjoutComponent,
-          ProfilComponent
+          ProfilComponent,
+          AjoutGroupeComponent,
+          ListGroupeComponent
   ],
   imports: [
     

@@ -46,4 +46,13 @@ export class ServicesService {
     return this.http.get(this.url+"/Accepter/listAccept");
   }
 
+  //Groupe Sanguin
+ajoutGroupe(dat:any){
+  return this.http.post(this.url+"/Groupe/Ajout", dat)
+}
+
+  getAllGroupe(){
+    return this.http.get(this.url+"/Groupe/listGroupe")
+  }
+
 }
