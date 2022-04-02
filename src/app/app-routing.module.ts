@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListAccepterComponent } from './Accept/list-accepter/list-accepter.component';
 import { AjoutComponent } from './Banque/ajout/ajout.component';
+import { UpdateBanqueComponent } from './Banque/update-banque/update-banque.component';
 import { ListDemandeComponent } from './Demande/list-demande/list-demande.component';
 import { AjoutGroupeComponent } from './GroupeSanguin/ajout-groupe/ajout-groupe.component';
 import { ListGroupeComponent } from './GroupeSanguin/list-groupe/list-groupe.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
     { path: 'profil', component: ProfilComponent },
     { path: 'AjoutGroupe', component: AjoutGroupeComponent },
     { path: 'ListGroupe', component: ListGroupeComponent },
+    { path: 'UpdateBanque/:id', component: UpdateBanqueComponent },
 
 
     { path: '', redirectTo: '/login', pathMatch:'full'},

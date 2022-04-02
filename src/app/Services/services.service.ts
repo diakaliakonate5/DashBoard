@@ -1,13 +1,12 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
-  url=environment.url;
+  url='http://localhost:8080';
 
   constructor(public http:HttpClient) {
 
@@ -54,6 +53,17 @@ ajoutGroupe(dat:any){
 
   getAllGroupe(){
     return this.http.get(this.url+"/Groupe/listGroupe")
+  }
+
+  detailBanque(id: any){
+    return this.http.get(`${this.url+"/Banque/ById"}/${id}`);
+  }
+  updateBanque(id: any,  data: any){
+    return this.http.put(`${this.url+"/Banque/modifierBanque"}/${id}`,data);
+  }
+
+  deleteBanque(id: any){
+    return this.http.delete(this.url+"/Banque/suprimerBanque/"+id)
   }
 
 }

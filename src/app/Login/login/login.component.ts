@@ -15,9 +15,9 @@ loginInfo:any;
     public router: Router) { }
 
   ngOnInit(): void {
-    
+
   }
-  
+
   onLogin(form :NgForm){
     this.service.login(form.value["login"],form.value["password"]).subscribe((res)=>{
       if(res){
@@ -28,11 +28,11 @@ loginInfo:any;
         location.replace("/ListUser");
         localStorage.setItem('isLogin', JSON.stringify(this.loginInfo));
         localStorage.setItem('loginStatus', JSON.stringify(loginStatus));
-      } 
+      }
   },
   err=>{
     console.log("login incorrecte");
-    
+
     this.toast.error("Login ou mot de passe incorrect");
   })
 }}

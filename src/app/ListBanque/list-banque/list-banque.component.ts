@@ -20,4 +20,10 @@ this.listerBaqnue()
 
     })
   }
+  deleteBanque(id : any){
+    this.service.deleteBanque(id).subscribe((result)=>{
+    // console.log(result))
+    this.ngOnInit()
+    });
+  }
 }

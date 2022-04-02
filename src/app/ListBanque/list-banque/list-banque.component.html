@@ -6,8 +6,8 @@
                 <div class="col-md-12">
                     <div class="card card-box">
                         <div class="card-head">
-                            
-                            
+
+
                         </div>
                         <div class="card-body ">
                             <div class="row p-b-20">
@@ -18,8 +18,8 @@
                                         </a>
                                     </div>
                                 </div>
-                               
-                                
+
+
                             </div>
                             <div class="table-scrollable">
                                 <header style="text-align: center;"> Liste des Banques</header>
@@ -31,18 +31,19 @@
                                     <th>Email</th>
                                     <th>Action</th>
                                 </tr></thead>
-                                <tbody *ngFor="let users of listBanque ">
+                                <tbody *ngFor="let banque of listBanque ">
                                     <tr>
-                                        <td>{{users.nom}}</td>
-                                        <td>{{users.telephone}}</td>
-                                        <td>{{users.adresse}}</td>
-                                        <td>{{users.email}}</td>
-                                        <td><a  class="btn btn-tbl-edit btn-xs" routerLink="/updatePromotion/{{users.id}}">
-                                            <i class="fa fa-pencil"></i>
-                                        </a></td>
-                                       
+                                        <td>{{banque.nom}}</td>
+                                        <td>{{banque.telephone}}</td>
+                                        <td>{{banque.adresse}}</td>
+                                        <td>{{banque.email}}</td>
+                                        <td><a routerLink="/UpdateBanque/{{banque.id}}">
+                                          <i class="material-icons">update</i>
+                                        </a>   <a (click)="deleteBanque(banque.id)">
+                                          <i class="material-icons">delete</i> </a>  </td>
+
                                     </tr>
-                                  
+
                                 </tbody>
                             </table>
                             </div>
